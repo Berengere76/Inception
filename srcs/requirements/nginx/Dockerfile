@@ -1,5 +1,7 @@
 FROM debian:bullseye
 
-RUN apt-get update && upgrade && apt install -y nginx
+RUN apt update && apt upgrade && apt install -y nginx openssl
 
-CMD ["nginx", "-g", "daemon off;"]
+RUN mkdir -p /etc/nginx/ssl
+
+EXPOSE 443
