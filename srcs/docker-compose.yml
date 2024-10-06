@@ -13,4 +13,4 @@ services:
 
   wordpress:
 
-  mariadb:
+  mariadb:1
