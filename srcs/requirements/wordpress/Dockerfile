@@ -29,8 +29,6 @@ RUN mv wp-cli.phar /usr/local/bin/wp
 
 RUN mkdir -p /run/php
 
-# RUN ./var/www/wordpress/auto_config.sh
-
 WORKDIR /var/www/wordpress
 
 EXPOSE 9000

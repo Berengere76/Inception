@@ -27,11 +27,3 @@ rm -f init.sql
 mysqladmin -u root -p${DB_ROOT_PASSWORD} shutdown
 
 exec mysqld --bind-address=0.0.0.0
-
-# To check if mariadb isn't empty, use the following command:
-# mariadb
-# SHOW DATABASES;
-# USE <database>;
-# SHOW TABLES;
-# SELECT <anything> FROM <table>;
-# EXIT;
