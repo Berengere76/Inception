@@ -10,8 +10,9 @@ RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.crt -keyout /etc/ngin
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 
 # Donne les permissions à root et à l'utilisateur
-RUN chmod 755 /var/www/html 
-RUN chown -R www-data:www-data /var/www/html
+RUN mkdir -p /var/www/wordpress
+RUN chmod 755 /var/www/wordpress
+RUN chown -R www-data:www-data /var/www/wordpress
 
 EXPOSE 443
 
