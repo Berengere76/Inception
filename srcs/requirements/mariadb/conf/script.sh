@@ -30,6 +30,6 @@ exec mysqld --bind-address=0.0.0.0
 
 # Pour se connecter avec les deux user ===> sudo docker exec -it mariadb mysql OU sudo docker exec -it mariadb mysql -u blebas -p123
 
-# Pour montrer les users ===> select current_user(); select * from wp_users; select user_login from wp_users;
-
 # Pour montrer les tables ===> show databases; use inception_db; show tables;
+
+# Pour montrer les users ===> select current_user(); select * from wp_users; select user_login from wp_users;
