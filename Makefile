@@ -17,3 +17,5 @@ clean:
 	sudo rm -rf /home/blebas/data/mysql /home/blebas/data/wordpress
 
 .PHONY: all re down clean
+
+# sudo nano /etc/hosts

@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Starting auto_config.sh"
-echo "Current directory: $(pwd)"
-echo "Environment variables: $(env)"
+# echo "Current directory: $(pwd)"
+# echo "Environment variables: $(env)"
 
 sleep 10
 
