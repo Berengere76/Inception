@@ -16,4 +16,5 @@ RUN chown -R www-data:www-data /var/www/wordpress
 
 EXPOSE 443
 
+# -g daemon off :  pour dire à Nginx de ne pas se lancer en arrière-plan sinon le conteneur s'arrête
 CMD ["nginx", "-g", "daemon off;"]

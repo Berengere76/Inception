@@ -58,6 +58,10 @@ volumes:
       device: /home/blebas/data/mysql
       o: bind
 
+# o:bind = bind mount, réperoire de l'hôte lié au répertoire du conteneur
+
 networks:
   inception:
     driver: bridge
+
+# bridge : pilote par défaut, permet aux conteneurs de communiquer entre eux sur le même réseau
